@@ -5,12 +5,13 @@
 }
 
 :root {
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(212, 212, 212);
   --bg-url: url(./fotos/back-ground.png);
-  --hover-bg-color: rgba(173, 173, 173, 0.5);
-  --border-color: rgba(255, 255, 255, 0.5);
-  --bg-color: rgba(173, 173, 173, 0.3);
+  --hover-bg-color: rgba(126, 126, 126, 0.5);
+  --border-color: rgba(145, 145, 145, 0.5);
+  --bg-color: rgba(95, 95, 95, 0.3);
   --switch: url(./fotos/moon.svg);
+  --button: rgba(0, 0, 0, 0.8);
 }
 
 .lighty {
@@ -20,6 +21,7 @@
   --border-color: rgba(104, 104, 104, 0.5);
   --bg-color: rgba(145, 145, 145, 0.5);
   --switch: url(./fotos/sun.svg);
+  --button: rgba(255, 255, 255, 0.8);
 }
 
 body {
@@ -71,7 +73,7 @@ body * {
   width: 32px;
   height: 32px;
   top: 50%;
-  background: white var(--switch) no-repeat center;
+  background: var(--button) var(--switch) no-repeat center;
   border-radius: 50%;
   border: none;
   position: absolute;
@@ -82,7 +84,7 @@ body * {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--hover-bg-color);
+  outline: 8px solid rgba(99, 99, 99, 0.5);
 }
 
 .lighty #switch button {
@@ -93,8 +95,8 @@ body * {
   display: block;
   width: 64px;
   height: 24px;
-  background: var(--bg-color);
-  border: 1px solid var(--border-color);
+  background: rgb(129, 129, 129);
+  border: 1px solid rgb(97, 97, 97);
   border-radius: 9999px;
 }
 
