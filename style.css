@@ -23,18 +23,13 @@
 }
 
 body {
-  /*
-  background-image: url(./back-ground.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-color: #000;
-  */
-  background: var(--bg-url) no-repeat top/cover #000;
+  background: var(--bg-url) no-repeat center/cover #000;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -184,5 +179,49 @@ footer {
   }
   to {
     right: 0;
+  }
+}
+
+/* Responsividade - Mobile e Tablets */
+@media (max-width: 768px) {
+  #container {
+    height: auto;
+    margin: clamp(40px, 10vh, 100px) auto 0 auto;
+    padding: 0 16px;
+  }
+
+  #profile img {
+    width: clamp(60px, 20vw, 100px);
+  }
+
+  #profile p {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  ul {
+    gap: clamp(12px, 3vw, 16px);
+    padding: clamp(16px, 5vw, 24px) 0;
+  }
+
+  ul li a {
+    padding: clamp(12px, 3vw, 16px) clamp(16px, 4vw, 24px);
+    font-size: clamp(14px, 4vw, 16px);
+  }
+
+  #social-links {
+    font-size: clamp(20px, 6vw, 32px);
+    gap: clamp(6px, 2vw, 10px);
+  }
+
+  #social-links a {
+    padding: clamp(10px, 2.5vw, 16px);
+  }
+
+  #switch {
+    margin: clamp(12px, 3vw, 20px) auto;
+  }
+
+  footer {
+    font-size: clamp(12px, 3vw, 14px);
   }
 }
